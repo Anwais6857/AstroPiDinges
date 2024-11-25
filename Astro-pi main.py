@@ -26,7 +26,3 @@ def finalDecision(rows, cols):
 print("Starting cloud test, this may take 10-15 seconds...")
 filterPixels(image.shape[0], image.shape[1], pixelsExceedingThreshold)
 finalDecision(image.shape[0], image.shape[1])
-
-
-
-
