@@ -1,6 +1,9 @@
 import cv2
 
-image = cv2.imread("photo_0675.jpg")
+image = cv2.imread("/fotos/photo_265_53246044109_o.jpg")
+if image is None:
+    print("Error: Image not loaded correctly.")
+    exit()
 cv2.imshow("Image", image)
 colorThreshold = [37, 150, 190]
 pixelsExceedingThreshold = 0
@@ -26,3 +29,7 @@ def finalDecision(rows, cols):
 print("Starting cloud test, this may take 10-15 seconds...")
 filterPixels(image.shape[0], image.shape[1], pixelsExceedingThreshold)
 finalDecision(image.shape[0], image.shape[1])
+
+
+
+
